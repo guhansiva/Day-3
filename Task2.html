@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guhan S - Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('pexels-anntarazevich-5598289.jpg');; /* Replace with your image path */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center center;
+    }
+
+    /* Sticky Header */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: darkblue;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    /* Topnav styling */
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    ul.topnav li { float: left; }
+
+    ul.topnav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul.topnav li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    ul.topnav li a.active {
+      background-color: #04AA6D;
+    }
+
+    ul.topnav li.right {
+      float: right;
+    }
+
+    @media screen and (max-width: 600px) {
+      ul.topnav li.right,
+      ul.topnav li {
+        float: none;
+      }
+    }
+
+    .section {
+      padding: 20px;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    .profile-card {
+      width: 300px;
+      height: auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid #333;
+      padding: 20px;
+      margin: 30px auto;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      position: relative; /* ✅ Relative position */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .profile-card img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .profile-card h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      color: #000;
+    }
+
+    .profile-card p {
+      margin: 0 0 12px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .profile-card button {
+      padding: 6px 14px;
+      margin-top: 8px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .profile-card button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .spacer {
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header>
+    <h1>Guhan S - Portfolio</h1>
+    <ul class="topnav">
+      <li><a href="#objective">Objective</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="Black and White Clean Professional A4 Resume.pdf">Resume</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </header>
+
+  <!-- Profile Card -->
+  <div class="profile-card">
+    <img src="Guhans.jpg" alt="Profile Picture">
+    <h2>Guhan S</h2>
+    <p>Mechatronics Engineer</p>
+    <button>Connect</button>
+  </div>
+
+  <!-- Sections -->
+  <section id="objective" class="section">
+    <h2>Career Objective</h2>
+    <p>To work with maximum potential using my skills while contributing innovative thoughts and actions to develop the company and my knowledge.</p>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>BE Mechatronics Engineering</strong> - Kongu Engineering College (2023 - 2027) – CGPA: 8.1</li>
+      <li>Navarasam Matriculation Higher Secondary School, Palliyuthu</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Paper Presentations</h2>
+    <ul>
+      <li>Hydrogel – Scientium, KEC</li>
+      <li>Non-electrical Solar Tracker – Throb, Mechnotron, Ideas to Impact</li>
+      <li>Automatic Ceiling Fan Cleaner – Ideathon</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Applications:</strong> CorelDRAW, Scratch, Blender, Canva</li>
+      <li><strong>Mechanical Design:</strong> SolidWorks, AutoCAD</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Workshops</h2>
+    <ul>
+      <li>TRS Autonomous Vehicle – 2025</li>
+      <li>Robo Sumo – 2024</li>
+      <li>ElectroCAD IoT – 2025</li>
+      <li>Intro to Robotics in Automation Studio 9.0 – 2024</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Credit Courses</h2>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+      <thead>
+        <tr style="background-color: #00bcd4; color: #000;">
+          <th style="padding: 10px; border: 1px solid #ccc;">Course</th>
+          <th style="padding: 10px; border: 1px solid #ccc;">Year</th>
+          <th style="padding: 10px; border: 1px solid #ccc;">Institution</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc;">PCB Design</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">2024</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Kongu Engineering College</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc;">Relay Logic Controller</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">2025</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Kongu Engineering College</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li>UV RADAR – Science Competition, KEC</li>
+      <li>Non-electrical Solar Tracker – Smart India Hackathon</li>
+      <li>Automatic Ceiling Fan Cleaner – Atom Quest & Ruby Year Award</li>
+      <li>Warehouse Q-bot – e-Yantra</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Field Visits</h2>
+    <ul>
+      <li>Kodai Chocolate Factory, Kodaikanal</li>
+      <li>Real Tech Systems, Perundurai</li>
+      <li>Coral Coil, Injampalli</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Memberships</h2>
+    <ul>
+      <li>Science Club</li>
+      <li>Executive Member, Robotics Club (RBC)</li>
+      <li>Member, Robotics Society (TRS)</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:guhansivasubramanian006@gmail.com">guhansivasubramanian006@gmail.com</a></p>
+    <p>Phone: +91 88076 51897</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/guhan-siva-9b7b712b6" target="_blank">Guhan Siva</a></p>
+    <p>LeetCode: <a href="https://leetcode.com/u/Guhan_Siva/" target="_blank">Guhan_Siva</a></p>
+    <p>Location: Erode, Tamil Nadu, India</p>
+  </section>
+
+  <!-- Spacer -->
+  <div class="spacer"></div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Guhan S
+  </footer>
+
+</body>
+</html>
